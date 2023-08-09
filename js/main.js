@@ -1,6 +1,6 @@
 $(document).ready(function() {
     // Load more time entries initially to ensure the page is scrollable
-    for (let i = 0; i < 20; i++) {  // Adjusting the initial count to 20 to fill up the viewport
+    for (let i = 0; i < 5; i++) {  // Adjusting the initial count to 20 to fill up the viewport
         fetchTimeForEST();
     }
 
