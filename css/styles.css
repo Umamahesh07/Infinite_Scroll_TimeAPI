@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 50px;
+    background-color: #a5c0ef;
+}
+
+.time-entry {
+    font-size: 24px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #ffffff; /* Changed to white for a cleaner look */
+    margin-bottom: 10px;
+    height: auto; /* Reset to auto so it takes only the space it needs */
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added a shadow for a lift effect */
+    max-width: 600px; /* Limit the width for better readability */
+    margin-left: auto; /* Centering the box */
+    margin-right: auto;
+    border-radius: 8px; /* Rounded corners */
+}
+
+.time-label {
+    font-weight: bold;
+}
