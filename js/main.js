@@ -1,13 +1,12 @@
 $(document).ready(function() {
-    // Load more time entries initially to ensure the page is scrollable
-    for (let i = 0; i < 5; i++) {  // Adjusting the initial count to 20 to fill up the viewport
+    for (let i = 0; i < 10; i++) { 
         fetchTimeForEST();
     }
 
     $(window).scroll(function() {
         if ($(window).scrollTop() + $(window).height() >= $(document).height() - 10) {
             // When user is near the bottom, fetch and display multiple time entries
-            for (let i = 0; i < 10; i++) {  // Also, load more entries when scrolling
+            for (let i = 0; i < 5; i++) {  // Also, load more entries when scrolling
                 fetchTimeForEST();
             }
         }
@@ -24,7 +23,7 @@ function fetchTimeForEST() {
 
         // Create a new element to hold the date and time, format it, and append it to the container
         const timeElement = $('<div class="time-entry"></div>').html(`
-            <span class="time-label">Date: </span>${localDate}<br>
+            <span class="time-label">Date: </span>${localDate}
             <span class="time-label">Current Time: </span>${localTime}
         `);
         $('#time-container').append(timeElement);
